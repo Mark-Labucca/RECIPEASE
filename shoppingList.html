@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="tab icon" href="img/recipease%20tab%20icon.png">
+    <link rel="stylesheet" href="style.css">
+    <title>RECIPEASE</title>
+</head>
+<body>
+    <div id="loader"></div>
+    <div class="whole-page">
+        <header class="header">
+            <div class="logo">
+                <img src="img/logo.png" alt="My logo">
+            </div>
+
+            <div class="logo-1">
+                <img src="img/textlogo.png" alt="My Logo" >
+            </div>
+
+            <div class="header-txt">
+                <h1>SHOPPING LIST</h1>
+            </div>
+
+            <div class="profile">
+                <button class="prof-icon fa-solid fa-user"></button>
+            </div>
+        </header>
+
+        <section class="prof-toggle">
+            <div class="toggle-container">
+                <div class="close">&times;</div>
+                <div class="toggle-name">
+                    neil brian araiz
+                    <span class="mail">neilbrianaraiz@gmail.com</span>
+                </div>
+                
+                <div class="toggle-body edit-prof">
+                    <i class="fa-solid fa-pen">
+                        <span class="icon-name">edit profile</span>
+                    </i>
+                    <p class="fa-solid fa-chevron-right"></p>
+                </div>
+                <div class="toggle-body mid reset">
+                    <i class="fa-solid fa-rotate-right">
+                        <span class="icon-name">reset password</span>
+                    </i>
+                    <p class="fa-solid fa-chevron-right"></p>
+                </div>
+
+                <button class="logout">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    Log Out
+                </button>
+            </div>
+        </section>
+
+        <section class="toggle-edit">
+            <div class="toggle-header">
+                <i class="fa-solid fa-chevron-left"></i>
+            </div>
+            <form class="wrapper-form">
+                <h1>edit profile</h1>
+                <div class="inner-form">
+                    <label for="first-name">First name*</label>
+                    <input type="text" id="first-name" placeholder="Enter your first name" required>
+
+                    <label for="last-name">Last name*</label>
+                    <input type="text" id="last-name" placeholder="Enter your last name" required>
+
+                    <label for="email">Email*</label>
+                    <input type="email" id="email" placeholder="Enter your email address" required>
+                </div>
+
+                <div class="wrapper-btn">
+                    <input type="button" class="cancel" value="cancel">
+                    <input type="submit" class="save" value="save">
+                </div>
+            </form>
+
+            <div class="save-container">
+                <div class="save-wrap">
+                    <img src="img/check.png" alt="">
+                    <h2>Thank You!</h2>
+                    <p>Your details has been succesfully submitted. Thanks!</p>
+                    <button class="btnPop">OK</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="toggle-reset">
+            <div class="toggle-header">
+                <i class="fa-solid fa-chevron-left back1"></i>
+            </div>
+            <form class="wrapper-form" id="wrapper-form">
+                <h1>reset password</h1>
+                <div class="inner-form">
+                    <label for="email">Email address*</label>
+			        <input type="email" placeholder="Enter your email address" required>
+				
+			        <label for="password">Password*</label>
+			        <input type="password" placeholder="Enter your new password" required>
+                
+                    <label for="password">Confirm Password*</label>
+			        <input type="password" placeholder="Confirm your new password" required>
+                </div>
+
+                <div class="wrapper-btn">
+                    <input type="button" class="cancel1" value="cancel">
+                    <input type="submit" class="save1" value="save">
+                </div>
+            </form>
+
+            <div class="save-container" id="save-container">
+                <div class="save-wrap">
+                    <img src="img/check.png" alt="">
+                    <h2>Thank You!</h2>
+                    <p>Your details has been succesfully submitted. Thanks!</p>
+                    <button class="btnPop1">OK</button>
+                </div>
+            </div>
+        </section>
+    
+            <section class="sidebar">
+
+                <div class="side-logo">
+                    <img src="img/logo.png" alt="My Logo">
+                </div>
+                
+                <div class="side_nav">
+                    <ul class="nav_list">
+                        <span class="line ltop"></span>
+                        <li class="nav_item">
+                            <a href="recipe.html" class="nav_link "> 
+                                <i class="fa-sharp fa-solid fa-utensils nav_icon"></i>
+                                <span class="nav_name">Recipes</span>
+                            </a>
+                        </li>
+    
+                        <li class="nav_item">
+                            <a href="pantry.html" class="nav_link"> 
+                                <i class="fa-solid fa-box-open nav_icon"></i>
+                                <span class="nav_name">Pantry</span>
+                            </a>
+                        </li>
+    
+                        <li class="nav_item">
+                            <a href="mealPlanner.html" class="nav_link"> 
+                                <i class="fa-solid fa-calendar-days nav_icon"></i>
+                               <span class="nav_name">Meal Planner</span>
+                            </a>
+                        </li>
+    
+                        <li class="nav_item">
+                            <a href="shoppingList.html" class="nav_link"> 
+                                <i class="fa-solid fa-cart-shopping nav_icon active"></i>
+                                <span class="nav_name active">Shopping List</span>
+                            </a>
+                        </li>
+                        
+                        <li class="nav_item">
+                            <a href="favorites.html" class="nav_link"> 
+                                <i class="fa-sharp fa-solid fa-heart nav_icon"></i>
+                                <span class="nav_name">Favorites</span>
+                            </a>
+                        </li>
+                        <span class="line lbottom"></span>
+                    </ul>
+                </div>
+                    
+            </section>
+    
+        <main class="main-shopping-list">
+            <div class="card-shopping-list">
+                <div class="card-shop-header">my shopping list</div>
+
+                <div class="card-shop-body"><img src="img/cart-shop.png" alt="Cart Recipe">
+                    <h3>your shopping list is empty</h3>
+                </div>
+               
+            </div>
+        </main>
+    </div>
+    <script src="loader.js"></script>
+    <script src="profile.js"></script>
+</body>
+</html>
